@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Kozmo">
+    <title>Karnaak :: A decent grid for HTML projects ::..</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/yoursite.css">
+    <link rel="stylesheet" href="vendor/jquery/jquery-ui.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/vendor/aos/aos.css">
+    <!-- JS -->
+    <script src="js/k-master.js"></script>
+    <script src="vendor/modernizr/modernizr.js"></script>
+    <script src="/assets/css/less/less.min.js" type="text/javascript"></script>
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/jquery/jquery-ui.min.js"></script>
+    <script src="js/corporate-ol.js"></script>
+    <script src="vendor/aos/aos.js"></script>
+    <!-- date picker -->
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+  <style>
+      
+      
+      
+    </style>
+   <body>
+       <section class="kg-container">
+           <header class="kg-grid mainHeader unuscolor-d-bg" id="mainHeader">
+           <article class="[ zeb-12  zeb-m-12 ]">
+            <div class="[ zeb-4  zeb-m-6 ]">
+                <div class="header--logo k-padding-tiny">
+                    <div class="k-container">
+                        <img src="" alt="a brand logo" class="header--logo__image">
+                    </div>
+                </div>
+            </div>
+            <div class="[ zeb-8  zeb-m-6 ] k-hide-small">
+                <nav data-ui-component="desktopTopNav" class="k-right">
+                    <div class="desktop-top-nav__list k-bar">
+                        <div class="desktop-top-nav__item">                            
+                                <div class="k-dropdown-hover">
+                                    <div class="k-btn unus-d-hover albus-txt align-center flexxer">icon<span class="material-icons">arrow_drop_down</span></div>
+                                    <div class="k-dropdown-content duocolor-d-bg">
+                                        <a href="" class="desktop-main-nav__sub-menu__item k-block k-padding-tiny duo-d-hover txt-left">
+                                        <span class="k-container">link1</span></a>   
+                                    </div>
+                                </div>                            
+                        </div>
+                        <div class="desktop-top-nav__item">                            
+                                <p class="albus-txt k-btn unus-d-hover">2</p>                           
+                        </div>
+                        <div class="desktop-top-nav__item">                            
+                                <p class="albus-txt k-btn unus-d-hover">3</p>                            
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- Mobile main menu -->
+            <div class="k-sidebar k-bar-block unuscolor-d-bg k-hide-large k-hide-medium" id="mobileMenu_bar">
+              <nav data-ui-component="mobileMainNav_menu" class="mobile-main-nav__menu">
+                <a class="k-bar-item k-btn" href="">1</a>
+                <a  class="k-bar-item k-btn" href="">2</a>
+                <a class="k-bar-item k-btn" href="">3</a>   
+                <div class="k-bar-item k-btn" onclick="k_close()">Close Menu</div>
+              </nav>
+            </div>
+            <!-- -->
+            <div class="[ zeb-6  zeb-m-6 ] k-hide-large k-hide-medium">
+                <div class="[ zeb-12  zeb-m-12 ]">
+                    <nav data-ui-component="mobileMainNav_btn" class="k-right k-padding-tiny" onclick="k_open()">
+                        <div class="k-container pointit">
+                           <span class="material-icons">menu</span>
+                        </div>
+                    </nav>
+                </div>
+            </div>            
+            <!-- -->
+        </article>
+            <div class="[ zeb-12  zeb-m-12 ] clearfix k-hide-small k-hide-medium" style="padding-top: 5vh">
+            <nav class="k-right" data-ui-component="desktopMainMenu">
+                <div class="desktop-main-menu__list k-bar">
+                    <div class="desktop-main-menu__item">                        
+                            <p class="k-btn unus-d-hover ">1</p>                        
+                    </div>
+                    <div class="desktop-main-menu__item">                        
+                            <p class="k-btn unus-d-hover ">2</p>                        
+                    </div>
+                    <div class="desktop-main-menu__item">                        
+                            <p class="k-btn unus-d-hover ">3</p>                        
+                    </div>
+                     <div class="desktop-main-menu__item">
+                     <div class="k-dropdown-hover">                    
+                       <div class="k-btn unus-d-hover "><p>4</p></div>
+                                    <div class="k-dropdown-content duocolor-d-bg">
+                                        <a href="" class="desktop-main-nav__sub-menu__item k-block k-padding-tiny duo-d-hover txt-left">
+                                        <span class="k-container">link1</span></a>   
+                                        <a href="" class="desktop-main-nav__sub-menu__item k-block k-padding-tiny duo-d-hover txt-left">
+                                        <span class="k-container">link2</span></a>   
+                                        <a href="" class="desktop-main-nav__sub-menu__item k-block k-padding-tiny duo-d-hover txt-left">
+                                        <span class="k-container">link3</span></a>   
+                                        <a href="" class="desktop-main-nav__sub-menu__item k-block k-padding-tiny duo-d-hover txt-left">
+                                        <span class="k-container">link4</span></a>   
+                                    </div>                    
+                        </div>
+                    </div>
+                    <div class="desktop-main-menu__item">                        
+                            <p class="k-btn unus-d-hover ">5</p>                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+            </header>
+            <!-- HIDDEN MENU que aparece despues de scrollear 100px -->
+    <div data-ui-component="mainHiddenTopMenu" id="mainHiddenMenu" class="[ zeb-12  zeb-m-12 ] unuscolor-d-bg k-hide-small k-hide-medium" hidden>
+           <div class="k-container">
+            <div class="[ zeb-12  zeb-m-12 ] k-padding-tiny">
+                <div class="[ zeb-3 ]">
+                   <div class="k-container">
+                    <img src="" alt="a smaller/alt logo">  
+                   </div>
+                </div>
+                <div class="[ zeb-9 ]">
+                   <div class="k-right">
+                    <p>other content</p>   
+                   </div>   
+                </div>
+            </div>
+           </div>
+    </div>
+    <!-- -->
+            
+             <div class="kg-grid mainCover">
+                 <div class="imma-parallax-cover"></div>
+             </div>
+           <div class="kg-grid mainContent albus-bg">
+           <div class="zeb-12 zeb-m-12 k-padding-tiny">
+              <div class="main-nos">
+                <div class="">
+                   <div class="cards-container">
+                       <div class="card card-3">
+                          <div class="card-title k-padding-tiny">
+                              <h5>I'm a title</h5>
+                          </div>
+                          <div class="card-subtitle">
+                              <p>i'm a subtitle</p>
+                          </div>
+                           <div class="card-3-img-container">
+                               <div class="card-img">
+                                   <img src="//www.olinkdevaws.com/media/rateshop/cars/nissan-quest-nd.png" alt="hello">
+                               </div>
+                           </div>
+                           <div class="card-row-container zeb-12 zeb-m-12">
+                               <ul class="li-3">
+                                   <li>
+                                       <table>
+                                           <tr>
+                                               <th>
+                                                   <p>1</p>
+                                               </th>
+                                           </tr>
+                                           <tr>
+                                               <th>
+                                                   <p>2</p>
+                                               </th>
+                                           </tr>
+                                       </table>
+                                   </li>
+                                   <li>
+                                       <table>
+                                           <tr>
+                                               <th>
+                                                   <p>1</p>
+                                               </th>
+                                           </tr>
+                                           <tr>
+                                               <th>
+                                                   <p>2</p>
+                                               </th>
+                                           </tr>
+                                       </table>
+                                   </li>
+                                   <li>
+                                       <table>
+                                           <tr>
+                                               <th>
+                                                   <p>1</p>
+                                               </th>
+                                           </tr>
+                                           <tr>
+                                               <th>
+                                                   <p>2</p>
+                                               </th>
+                                           </tr>
+                                       </table>
+                                   </li>
+                               </ul>
+                           </div>
+                              <div class="card-row-container zeb-12 zeb-m-12">
+                               <ul class="li-2">
+                                   <li>
+                                       <table>
+                                           <tr>
+                                               <th>
+                                                   <p>1</p>
+                                               </th>
+                                           </tr>
+                                           <tr>
+                                               <th>
+                                                   <p>2</p>
+                                               </th>
+                                           </tr>
+                                       </table>
+                                   </li>
+                                   <li>
+                                       <table>
+                                           <tr>
+                                               <th>
+                                                   <p>1</p>
+                                               </th>
+                                           </tr>
+                                           <tr>
+                                               <th>
+                                                   <p>2</p>
+                                               </th>
+                                           </tr>
+                                       </table>
+                                   </li>
+                               </ul>
+                           </div>
+                              <div class="card-row-container zeb-12 zeb-m-12">
+                               <ul class="li-1">
+                                   <li>
+                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis recusandae a quia, quisquam odit! Nulla quaerat saepe nobis laudantium.</p>
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                       <div class="card card-3">
+                           <div class="card-title k-padding-tiny">
+                              <h5>I'm a title</h5>
+                          </div>
+                          <div class="card-subtitle">
+                              <p>i'm a subtitle</p>
+                          </div>
+                           <div class="card-3-img-container">
+                               <div class="card-img">
+                                   <img src="//www.olinkdevaws.com/media/rateshop/cars/nissan-quest-nd.png" alt="hello">
+                               </div>
+                           </div>
+                           <div class="card-row-container zeb-12 zeb-m-12">
+                               <ul class="li-3">
+                                   <li>
+                                       <table>
+                                           <tr>
+                                               <th>
+                                                   <p>1</p>
+                                               </th>
+                                           </tr>
+                                           <tr>
+                                               <th>
+                                                   <p>2</p>
+                                               </th>
+                                           </tr>
+                                       </table>
+                                   </li>
+                                   <li>
+                                       <table>
+                                           <tr>
+                                               <th>
+                                                   <p>1</p>
+                                               </th>
+                                           </tr>
+                                           <tr>
+                                               <th>
+                                                   <p>2</p>
+                                               </th>
+                                           </tr>
+                                       </table>
+                                   </li>
+                                   <li>
+                                       <table>
+                                           <tr>
+                                               <th>
+                                                   <p>1</p>
+                                               </th>
+                                           </tr>
+                                           <tr>
+                                               <th>
+                                                   <p>2</p>
+                                               </th>
+                                           </tr>
+                                       </table>
+                                   </li>
+                               </ul>
+                           </div>
+                              <div class="card-row-container zeb-12 zeb-m-12">
+                               <ul class="li-2">
+                                   <li>
+                                       <table>
+                                           <tr>
+                                               <th>
+                                                   <p>1</p>
+                                               </th>
+                                           </tr>
+                                           <tr>
+                                               <th>
+                                                   <p>2</p>
+                                               </th>
+                                           </tr>
+                                       </table>
+                                   </li>
+                                   <li>
+                                       <table>
+                                           <tr>
+                                               <th>
+                                                   <p>1</p>
+                                               </th>
+                                           </tr>
+                                           <tr>
+                                               <th>
+                                                   <p>2</p>
+                                               </th>
+                                           </tr>
+                                       </table>
+                                   </li>
+                               </ul>
+                           </div>
+                              <div class="card-row-container zeb-12 zeb-m-12">
+                               <ul class="li-1">
+                                   <li>
+                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis recusandae a quia, quisquam odit! Nulla quaerat saepe nobis laudantium.</p>
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                       <div class="card card-3">
+                           <div class="card-title k-padding-tiny">
+                              <h5>I'm a title</h5>
+                          </div>
+                          <div class="card-subtitle">
+                              <p>i'm a subtitle</p>
+                          </div>
+                           <div class="card-3-img-container">
+                               <div class="card-img">
+                                   <img src="//www.olinkdevaws.com/media/rateshop/cars/nissan-quest-nd.png" alt="hello">
+                               </div>
+                           </div>
+                           <div class="card-row-container zeb-12 zeb-m-12">
+                               <ul class="li-3">
+                                   <li>
+                                       <table>
+                                           <tr>
+                                               <th>
+                                                   <p>1</p>
+                                               </th>
+                                           </tr>
+                                           <tr>
+                                               <th>
+                                                   <p>2</p>
+                                               </th>
+                                           </tr>
+                                       </table>
+                                   </li>
+                                   <li>
+                                       <table>
+                                           <tr>
+                                               <th>
+                                                   <p>1</p>
+                                               </th>
+                                           </tr>
+                                           <tr>
+                                               <th>
+                                                   <p>2</p>
+                                               </th>
+                                           </tr>
+                                       </table>
+                                   </li>
+                                   <li>
+                                       <table>
+                                           <tr>
+                                               <th>
+                                                   <p>1</p>
+                                               </th>
+                                           </tr>
+                                           <tr>
+                                               <th>
+                                                   <p>2</p>
+                                               </th>
+                                           </tr>
+                                       </table>
+                                   </li>
+                               </ul>
+                           </div>
+                              <div class="card-row-container zeb-12 zeb-m-12">
+                               <ul class="li-2">
+                                   <li>
+                                       <table>
+                                           <tr>
+                                               <th>
+                                                   <p>1</p>
+                                               </th>
+                                           </tr>
+                                           <tr>
+                                               <th>
+                                                   <p>2</p>
+                                               </th>
+                                           </tr>
+                                       </table>
+                                   </li>
+                                   <li>
+                                       <table>
+                                           <tr>
+                                               <th>
+                                                   <p>1</p>
+                                               </th>
+                                           </tr>
+                                           <tr>
+                                               <th>
+                                                   <p>2</p>
+                                               </th>
+                                           </tr>
+                                       </table>
+                                   </li>
+                               </ul>
+                           </div>
+                              <div class="card-row-container zeb-12 zeb-m-12">
+                               <ul class="li-1">
+                                   <li>
+                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis recusandae a quia, quisquam odit! Nulla quaerat saepe nobis laudantium.</p>
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                          <div class="card card-2">
+                           <div class="card-title k-padding-tiny">
+                              <h5>I'm a title</h5>
+                          </div>
+                          <div class="card-subtitle">
+                              <p>i'm a subtitle</p>
+                          </div>
+                           <div class="card-2-img-container">
+                               <div class="card-img">
+                                   <img src="//www.olinkdevaws.com/media/rateshop/cars/nissan-quest-nd.png" alt="hello">
+                               </div>
+                           </div>
+                           <div class="card-row-container zeb-12 zeb-m-12">
+                               <ul class="li-3">
+                                   <li>
+                                       <table>
+                                           <tr>
+                                               <th>
+                                                   <p>1</p>
+                                               </th>
+                                           </tr>
+                                           <tr>
+                                               <th>
+                                                   <p>2</p>
+                                               </th>
+                                           </tr>
+                                       </table>
+                                   </li>
+                                   <li>
+                                       <table>
+                                           <tr>
+                                               <th>
+                                                   <p>1</p>
+                                               </th>
+                                           </tr>
+                                           <tr>
+                                               <th>
+                                                   <p>2</p>
+                                               </th>
+                                           </tr>
+                                       </table>
+                                   </li>
+                                   <li>
+                                       <table>
+                                           <tr>
+                                               <th>
+                                                   <p>1</p>
+                                               </th>
+                                           </tr>
+                                           <tr>
+                                               <th>
+                                                   <p>2</p>
+                                               </th>
+                                           </tr>
+                                       </table>
+                                   </li>
+                               </ul>
+                           </div>
+                              <div class="card-row-container zeb-12 zeb-m-12">
+                               <ul class="li-2">
+                                   <li>
+                                       <table>
+                                           <tr>
+                                               <th>
+                                                   <p>1</p>
+                                               </th>
+                                           </tr>
+                                           <tr>
+                                               <th>
+                                                   <p>2</p>
+                                               </th>
+                                           </tr>
+                                       </table>
+                                   </li>
+                                   <li>
+                                       <table>
+                                           <tr>
+                                               <th>
+                                                   <p>1</p>
+                                               </th>
+                                           </tr>
+                                           <tr>
+                                               <th>
+                                                   <p>2</p>
+                                               </th>
+                                           </tr>
+                                       </table>
+                                   </li>
+                               </ul>
+                           </div>
+                              <div class="card-row-container zeb-12 zeb-m-12">
+                               <ul class="li-1">
+                                   <li>
+                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis recusandae a quia, quisquam odit! Nulla quaerat saepe nobis laudantium.</p>
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                       <div class="card card-2">
+                           <div class="card-title k-padding-tiny">
+                              <h5>I'm a title</h5>
+                          </div>
+                          <div class="card-subtitle">
+                              <p>i'm a subtitle</p>
+                          </div>
+                           <div class="card-2-img-container">
+                               <div class="card-img">
+                                   <img src="//www.olinkdevaws.com/media/rateshop/cars/nissan-quest-nd.png" alt="hello">
+                               </div>
+                           </div>
+                           <div class="card-row-container zeb-12 zeb-m-12">
+                               <ul class="li-3">
+                                   <li>
+                                       <table>
+                                           <tr>
+                                               <th>
+                                                   <p>1</p>
+                                               </th>
+                                           </tr>
+                                           <tr>
+                                               <th>
+                                                   <p>2</p>
+                                               </th>
+                                           </tr>
+                                       </table>
+                                   </li>
+                                   <li>
+                                       <table>
+                                           <tr>
+                                               <th>
+                                                   <p>1</p>
+                                               </th>
+                                           </tr>
+                                           <tr>
+                                               <th>
+                                                   <p>2</p>
+                                               </th>
+                                           </tr>
+                                       </table>
+                                   </li>
+                                   <li>
+                                       <table>
+                                           <tr>
+                                               <th>
+                                                   <p>1</p>
+                                               </th>
+                                           </tr>
+                                           <tr>
+                                               <th>
+                                                   <p>2</p>
+                                               </th>
+                                           </tr>
+                                       </table>
+                                   </li>
+                               </ul>
+                           </div>
+                              <div class="card-row-container zeb-12 zeb-m-12">
+                               <ul class="li-2">
+                                   <li>
+                                       <table>
+                                           <tr>
+                                               <th>
+                                                   <p>1</p>
+                                               </th>
+                                           </tr>
+                                           <tr>
+                                               <th>
+                                                   <p>2</p>
+                                               </th>
+                                           </tr>
+                                       </table>
+                                   </li>
+                                   <li>
+                                       <table>
+                                           <tr>
+                                               <th>
+                                                   <p>1</p>
+                                               </th>
+                                           </tr>
+                                           <tr>
+                                               <th>
+                                                   <p>2</p>
+                                               </th>
+                                           </tr>
+                                       </table>
+                                   </li>
+                               </ul>
+                           </div>
+                              <div class="card-row-container zeb-12 zeb-m-12">
+                               <ul class="li-1">
+                                   <li>
+                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis recusandae a quia, quisquam odit! Nulla quaerat saepe nobis laudantium.</p>
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                   </div>
+               </div>  
+              </div>
+               
+           </div>
+           </div> 
+           <footer class="kg-grid mainFooter septemcolor-d-bg clearfix">
+           <div class="zeb-12 zeb-m-12 k-padding-small">
+               <div class="zeb-4 zeb-m-12 footerColumns">
+                   <p>1</p>
+               </div>
+               <div class="zeb-4 zeb-m-12 footerColumns">
+                   <ul>
+                       <li>
+                           <p>1</p>
+                       </li>
+                       <li>
+                           <p>2</p>
+                       </li>
+                   </ul>
+               </div>
+               <div class="zeb-4 zeb-m-12 footerColumns">
+                   <ul>
+                       <li>
+                           <p>1</p>
+                       </li>
+                       <li>
+                           <p>2</p>
+                       </li>
+                       <li>
+                           <p>3</p>
+                       </li>
+                       <li>
+                           <p>4</p>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+           </footer>
+       </section>
+       <script type="application/javascript">
+       
+           $(document).ready(function() {
+        var headerTop = $('#mainHeader').offset().top;
+        var headerBottom = headerTop + 100; // Sub-menu should appear after this distance from top.
+        $(window).scroll(function () {
+            var scrollTop = $(window).scrollTop(); // Current vertical scroll position from the top
+            if (scrollTop > headerBottom) { // Check to see if we have scrolled more than headerBottom
+                if (($("#mainHiddenMenu").is(":visible") === false)) {
+                    $('#mainHiddenMenu').fadeIn('slow').addClass('mainHiddenMenufadeIn');
+                }
+            } else {
+                if ($("#mainHiddenMenu").is(":visible")) {
+                    $('#mainHiddenMenu').hide();
+                }
+            }
+        });
+    });
+       </script>
+   </body>
+   <script>
+    
+function k_open() {
+    document.getElementById("mobileMenu_bar").style.width = "100%";
+}
+function k_close() {
+    document.getElementById("mobileMenu_bar").style.width = "0%";
+}
+
+
+
+
+    /* Open when someone clicks on the span element */
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    /* Close when someone clicks on the "x" symbol inside the overlay */
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+
+
+
+
+    function myFunction(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("k-show") == -1) {
+            x.className += " k-show";
+        } else {
+            x.className = x.className.replace(" k-show", "");
+        }
+    }
+
+    function openCity(evt, cityName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" k-active-tab", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " k-active-tab";
+    }
+
+
+    
+    </script>
+    </html>

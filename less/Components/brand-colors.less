@@ -1,0 +1,504 @@
+// out: brand-colors.css, compress:true, autoprefixer:true,
+/*   */
+
+
+/////// COLORSSS NUNUNUNU APPPROACHH
+
+@unus_base_dark: hsl(16, 100%, 35%);
+@unus_base_bright: hsl(360, 100%, 100%);
+
+// +-+-+-+-+-  DARK theme  -+-+-+-+-+  //
+@unus_d: @unus_base_dark;
+@unus_d_hover: darken(@unus_base_dark, 10%);
+@unus_d_active: darken(@unus_base_dark, 13%);
+//
+@duo_d: screen(@unus_base_dark, #333);
+@duo_d_hover: darken(@duo_d, 10%);
+@duo_d_active: darken(@duo_d, 13%);
+//
+@tres_d: #ff9525;
+@tres_d_hover: darken(@tres_d, 10%);
+@tres_d_active: darken(@tres_d, 13%);
+//
+@quattor_d: lighten(@unus_base_dark, 60%);
+@quattor_d_hover: darken(@quattor_d, 10%);
+@quattor_d_active: darken(@quattor_d, 13%);
+//
+@quinque_d: tint(@unus_base_dark, 93%);
+@quinque_d_hover: darken(@quinque_d, 10%);
+@quinque_d_active: darken(@quinque_d, 13%);
+//
+@sex_d: lighten(@unus_base_dark, 40%);
+@sex_d_hover: darken(@sex_d, 10%);
+@sex_d_active: darken(@sex_d, 13%);
+//
+@septem_d: spin(@unus_base_dark, 45);
+@septem_d_hover: darken(@septem_d, 10%);
+@septem_d_active: darken(@septem_d, 13%);
+
+// +-+-+-+- BRIGHT theme -+-+-+-+ //
+@unus_b: @unus_base_bright;
+@unus_b_hover: darken(@unus_base_bright, 10%);
+@unus_b_active: darken(@unus_base_bright, 13%);
+//    
+@duo_b: darken(@unus_base_bright, 60%);
+@duo_b_hover: darken(@duo_b, 10%);
+@duo_b_active: darken(@duo_b, 13%);
+//
+@tres_b: #0dff00;
+@tres_b_hover: darken(@tres_b, 10%);
+@tres_b_active: darken(@tres_b, 13%);
+//
+@quattor_b: darken(@unus_base_bright, 60%);
+@quattor_b_hover: darken(@quattor_b, 10%);
+@quattor_b_active: darken(@quattor_b, 13%);
+//
+@quinque_b: darken(@unus_base_bright, 8%);
+@quinque_b_hover: darken(@quinque_b, 10%);
+@quinque_b_active: darken(@quinque_b, 13%);
+//
+@sex_b: multiply(@unus_base_bright, #ccc);
+@sex_b_hover: darken(@sex_b, 10%);
+@sex_b_active: darken(@sex_b, 13%);
+
+@septem_b: spin(@unus_base_bright, 90);
+@septem_b_hover: darken(@quattor_b, 10%);
+@septem_b_active: darken(@quattor_b, 13%);
+
+
+// BRIGHT theme colourssssss
+.unuscolor-b-bg{
+    background-color: @unus_base_bright;
+    h1, h2, h3, h4, h5, h6, p, a{
+        color: contrast(@unus_base_bright);
+    }
+}
+.unus-b-hover{
+    &:hover {
+        background-color: @unus_b_hover;
+        transition: 0.3s;
+    }
+    &:active {
+        background-color: @unus_b_active;
+        transition: 0.3s;
+    }
+}
+
+.duocolor-b-bg{
+    background-color: @duo_b;
+    h1, h2, h3, h4, h5, h6, p, a, code, em{
+        color: contrast(@duo_b);
+    }
+}
+.duo-b-hover{
+    &:hover {
+        background-color: @duo_b_hover;
+        transition: 0.3s;
+    }
+    &:active {
+        background-color: @duo_b_active;
+        transition: 0.3s;
+    }
+}
+
+.trescolor-b-bg{
+    background-color: @tres_b;
+    h1, h2, h3, h4, h5, h6, p, a, code, em{
+        color: contrast(@tres_b);
+    }
+}
+.tres-b-hover{
+    &:hover {
+        background-color: @tres_b_hover;
+        transition: 0.3s;
+    }
+    &:active {
+        background-color: @tres_b_active;
+        transition: 0.3s;
+    }
+}
+
+.quattorcolor-b-bg{
+    background-color: @quattor_b;
+    h1, h2, h3, h4, h5, h6, p, a, code, em{
+        color: contrast(@quattor_b);
+    }
+}
+.quattor-b-hover{
+    &:hover {
+        background-color: @quattor_b_hover;
+        transition: 0.3s;
+    }
+    &:active {
+        background-color: @quattor_b_active;
+        transition: 0.3s;
+    }
+}
+
+.quinquecolor-b-bg{
+    background-color: @quinque_b;
+    h1, h2, h3, h4, h5, h6, p, a, code, em{
+        color: contrast(@quinque_b);
+    }
+}
+.quinque-b-hover{
+    &:hover {
+        background-color: @quinque_b_hover;
+        transition: 0.3s;
+    }
+    &:active {
+        background-color: @quinque_b_active;
+        transition: 0.3s;
+    }
+}
+
+.sexcolor-b-bg{
+    background-color: @sex_b;
+    h1, h2, h3, h4, h5, h6, p, a, code, em{
+        color: contrast(@sex_b);
+    }
+}
+.sex-b-hover{
+    &:hover {
+        background-color: @sex_b_hover;
+        transition: 0.3s;
+    }
+    &:active {
+        background-color: @sex_b_active;
+        transition: 0.3s;
+    }
+}
+
+.septemcolor-b-bg{
+    background-color: @septem_b;
+    h1, h2, h3, h4, h5, h6, p, a, code, em{
+        color: contrast(@septem_b);
+    }
+}
+.septem-b-hover{
+    &:hover {
+        background-color: @septem_b_hover;
+        transition: 0.3s;
+    }
+    &:active {
+        background-color: @septem_b_active;
+        transition: 0.3s;
+    }
+}
+
+// +-+-+-+-+- DARK theme coloursssssss
+.unuscolor-d-bg{
+    background-color: @unus_d;
+    h1, h2, h3, h4, h5, h6, p, a, code, em{
+        color: contrast(@unus_d);
+    }
+}
+.unus-d-hover{
+    &:hover {
+        background-color: @unus_d_hover;
+        transition: 0.3s;
+    }
+    &:active {
+        background-color: @unus_d_active;
+        transition: 0.3s;
+    }
+}
+.duocolor-d-bg{
+    background-color: @duo_d;
+    h1, h2, h3, h4, h5, h6, p, a, code, em{
+        color: contrast(@duo_d);
+    }
+}
+.duo-d-hover{
+    &:hover {
+        background-color: @duo_d_hover;
+        transition: 0.3s;
+    }
+    &:active {
+        background-color: @duo_d_active;
+        transition: 0.3s;
+    }
+}
+
+.trescolor-d-bg{
+    background-color: @tres_d;
+    h1, h2, h3, h4, h5, h6, p, a, code, em{
+        color: contrast(@tres_d);
+    }
+}
+.tres-d-hover{
+    &:hover {
+        background-color: @tres_d_hover;
+        transition: 0.3s;
+    }
+    &:active {
+        background-color: @tres_d_active;
+        transition: 0.3s;
+    }
+}
+
+.quattorcolor-d-bg{
+    background-color: @quattor_d;
+    h1, h2, h3, h4, h5, h6, p, a, code, em{
+        color: contrast(@quattor_d);
+    }
+}
+.quattor-d-hover{
+    &:hover {
+        background-color: @quattor_d_hover;
+        transition: 0.3s;
+    }
+    &:active {
+        background-color: @quattor_d_active;
+        transition: 0.3s;
+    }
+}
+
+.quinquecolor-d-bg{
+    background-color: @quinque_d;
+    h1, h2, h3, h4, h5, h6, p, a, code, em{
+        color: contrast(@quinque_d);
+    }
+}
+.quinque-d-hover{
+    &:hover {
+        background-color: @quinque_d_hover;
+        transition: 0.3s;
+    }
+    &:active {
+        background-color: @quinque_d_active;
+        transition: 0.3s;
+    }
+}
+
+.sexcolor-d-bg{
+    background-color: @sex_d;
+    h1, h2, h3, h4, h5, h6, p, a, code, em{
+        color: contrast(@sex_d);
+    }
+}
+.sex-d-hover{
+    &:hover {
+        background-color: @sex_d_hover;
+        transition: 0.3s;
+    }
+    &:active {
+        background-color: @sex_d_active;
+        transition: 0.3s;
+    }
+}
+
+.septemcolor-d-bg{
+    background-color: @septem_d;
+    h1, h2, h3, h4, h5, h6, p, a, code, em{
+        color: contrast(@septem_d);
+    }
+}
+.septem-d-hover{
+    &:hover {
+        background-color: @septem_d_hover;
+        transition: 0.3s;
+    }
+    &:active {
+        background-color: @septem_d_active;
+        transition: 0.3s;
+    }
+}
+
+
+
+
+
+// Primary color >> FULL HSL
+@unuscolor: #243547;
+
+@unus-hue: 0;
+@unus-sat: 0%;
+@unus-lig: 18%;
+@unus-alp: 1;
+
+@unuscolor_: hsla(@unus-hue, @unus-sat, @unus-lig,@unus-alp);
+@unus__hover: hsla(@unus-hue, @unus-sat, @unus-lig - 10,@unus-alp);
+@unus__active: hsla(@unus-hue, @unus-sat, @unus-lig - 20,@unus-alp);
+// 10x more lightness
+@duocolor: #4f99db;
+@duocolor_: hsla(@unus-hue, @unus-sat, @unus-lig + 10,@unus-alp);
+// the notorious one
+@trescolor: #ff9525;
+// 10x darker 
+@quattorcolor: #2f2f2f;
+@quattorcolor_: hsla(@unus-hue, @unus-sat, @unus-lig - 10,@unus-alp);
+// The Brightest color of the scheme // + 70x lightness
+@quinquecolor: #f3f5f8;
+@quinquecolor_: hsla(@unus-hue, @unus-sat, @unus-lig + 70,@unus-alp);
+// 20x lighter --- The Alternative Color //
+@sexcolor: #c6d0df;
+@sexcolor_: hsla(@unus-hue, @unus-sat, @unus-lig + 20,@unus-alp);
+// The full 180 contrast
+@septemcolor: #99aac3;
+@septemcolor_: hsla(@unus-hue - 180, @unus-sat + 90, @unus-lig + 30,@unus-alp);
+@septemcolor__hover: hsla(@unus-hue - 180, @unus-sat + 90, @unus-lig + 20,@unus-alp);
+@septemcolor__active: hsla(@unus-hue - 180, @unus-sat + 90, @unus-lig + 10,@unus-alp);
+
+/*====*/
+
+// white
+@albus: #ffffff;
+// black
+@nigrum: #000000;
+
+/*BG´s*/
+
+.unuscolor-bg {
+    background-color: @unuscolor_;
+}
+.duocolor-bg {
+    background-color: @duocolor_;
+}
+.trescolor-bg {
+    background-color: @trescolor;
+}
+.quattorcolor-bg {
+    background-color: @quattorcolor;
+}
+.quinquecolor-bg {
+    background-color: @quinquecolor_;
+}
+.sexcolor-bg {
+    background-color: @sexcolor;
+}
+.septemcolor-bg {
+    background-color: @septemcolor_;
+}
+.albus-bg {
+    background-color: @albus;
+}
+.nigrum-bg {
+    background-color: @nigrum;
+}
+
+/* txt */
+
+.unuscolor-txt {
+    color: @unuscolor_;
+}
+.duocolor-txt {
+    color: @duocolor;
+}
+.trescolor-txt {
+    color: @trescolor;
+}
+.quattorcolor-txt {
+    color: @quattorcolor;
+}
+.quinquecolor-txt {
+    color: @quinquecolor;
+}
+.sexcolor-txt {
+    color: @sexcolor;
+}
+.septemcolor-txt {
+    color: @septemcolor;
+}
+.albus-txt {
+    color: @albus;
+}
+.nigrum-txt {
+    color: @nigrum;
+}
+
+/* hover */
+
+.unus-hover {
+    &:hover {
+        background-color: @unus__hover;
+        transition: 0.3s;
+    }
+    &:active {
+        background-color: @unus__active;
+        transition: 0.3s;
+    }
+}
+.duo-hover {
+    &:hover {
+        background-color: darken(@duocolor, 10%);
+        transition: 0.3s;
+    }
+    &:active {
+        background-color: darken(@duocolor, 15%);
+        transition: 0.3s;
+    }
+}
+.tres-hover {
+    &:hover {
+        background-color: darken(@trescolor, 10%);
+        transition: 0.3s;
+    }
+    &:active {
+        background-color: darken(@trescolor, 15%);
+        transition: 0.3s;
+    }
+}
+.quattor-hover {
+    &:hover {
+        background-color: darken(@quattorcolor, 10%);
+        transition: 0.3s;
+    }
+    &:active {
+        background-color: darken(@quattorcolor, 15%);
+        transition: 0.3s;
+    }
+}
+.quinque-hover {
+    &:hover {
+        background-color: darken(@quinquecolor, 10%);
+        transition: 0.3s;
+    }
+    &:active {
+        background-color: darken(@quinquecolor, 15%);
+        transition: 0.3s;
+    }
+}
+.sex-hover {
+    &:hover {
+        background-color: darken(@sexcolor, 10%);
+        transition: 0.3s;
+    }
+    &:active {
+        background-color: darken(@sexcolor, 15%);
+        transition: 0.3s;
+    }
+}
+.septem-hover {
+    &:hover {
+        background-color: @septemcolor__hover;
+        transition: 0.3s;
+    }
+    &:active {
+        background-color: @septemcolor__active;
+        transition: 0.3s;
+    }
+}
+
+/* ALERTS */
+
+@red: red;
+@flavo: yellow;
+@viridi: green;
+.alert-red-bg {
+    background-color: @red;
+}
+.alert-flavo-bg {
+    background-color: @flavo;
+}
+.alert-viridi-bg {
+    background-color: @viridi;
+}
+
+/**/
+
+/*.k-btn{
+    .trescolor-bg;
+    color: contrast(@trescolor);
+    .tres-hover;
+}*/

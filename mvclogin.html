@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="//mvc.travelaccessbenefits.com/assets/css/bootstrap.min.css">
+
+  <!-- Include the above in your HEAD tag ---------->
+  <link rel="stylesheet" href="//mvc.travelaccessbenefits.com/assets/css/style.css">
+  <!--
+      you can substitue the span of reauth email for a input with the email and
+      include the remember me checkbox
+      -->
+</head>
+<style>
+.k-container{
+        margin: 5px 0;
+    padding: 0;
+    }
+    .k-container h5{
+        font-size: 1em;
+        color: #fff;
+        padding: 8px;
+        vertical-align: baseline;
+        text-align: left;
+        display: table-cell;
+    }
+    .k-container h5 span{
+        color: #b30000;
+        background-color: #fd0;
+        padding: 2px 8px;
+        border-radius: 50%;
+        margin: 0 10px;
+    }
+    .alert-bg{
+        background-color: #b30000;
+        border-radius: 5px;
+    }
+</style>
+<body class="bg-1">
+    <div class="container">
+
+      <div class="col-lg-8" style="margin: 0 auto;  transform: translateY(30%);">
+        <div id="contenedor_central">
+            <div id="top_central">
+                    <a href="http://travelaccessbenefits.com?lang=es"><img src="http://www.travelaccessbenefits.com/assets/images/travel_access_blanco.png" class="img-responsive"></a>
+            </div>
+            <div id="medio_central">
+                    <div id="divisor">
+                    </div>
+            </div>
+            <div id="bottom_central">
+                
+            <form action="//mvc.travelaccessbenefits.com/index.php/auth/login" class="form-signin  text-center" method="post" accept-charset="utf-8">
+            
+
+               <div class="k-container col-8 d-inline-block">
+              <div class="alert-bg">
+                  <h5><span>&#33;</span>i'm an alert</h5>
+              </div>
+           </div>
+                <input type="text" name="login" value="" id="login" class="form-control col-8 d-inline-block" placeholder="User" maxlength="80" size="30" required="" autofocus=""  />
+  
+                <input type="password" name="password" value="" id="password" size="30" class="form-control col-8 d-inline-block" placeholder="Password" required="" autofocus=""  />
+                                
+                <button name="bLogin" type="submit" id="bLogin" class="btn btn-lg btn-primary btn-block btn-signin col-8 d-inline-block" >Sign In</button>
+                
+            </form>            <!-- /form -->
+  				</div>
+  			</div>
+
+    </div><!-- /container -->
+    <script src="jquery/bootstrap.min.js"></script>
+    <script src="jquery/jquery-3.3.1.slim.js"></script>
+<script type="text/javascript">
+$( document ).ready(function() {
+  // DOM ready
+
+  // Test data
+  /*
+   * To test the script you should discomment the function
+   * testLocalStorageData and refresh the page. The function
+   * will load some test data and the loadProfile
+   * will do the changes in the UI
+   */
+  // testLocalStorageData();
+  // Load profile if it exits
+  loadProfile();
+});
+
+/**
+* Function that gets the data of the profile in case
+* thar it has already saved in localstorage. Only the
+* UI will be update in case that all data is available
+*
+* A not existing key in localstorage return null
+*
+*/
+function getLocalProfile(callback){
+  var profileImgSrc      = localStorage.getItem("PROFILE_IMG_SRC");
+  var profileName        = localStorage.getItem("PROFILE_NAME");
+  var profileReAuthEmail = localStorage.getItem("PROFILE_REAUTH_EMAIL");
+
+  if(profileName !== null
+          && profileReAuthEmail !== null
+          && profileImgSrc !== null) {
+      callback(profileImgSrc, profileName, profileReAuthEmail);
+  }
+}
+
+/**
+* Main function that load the profile if exists
+* in localstorage
+*/
+function loadProfile() {
+  if(!supportsHTML5Storage()) { return false; }
+  // we have to provide to the callback the basic
+  // information to set the profile
+  getLocalProfile(function(profileImgSrc, profileName, profileReAuthEmail) {
+      //changes in the UI
+      $("#profile-img").attr("src",profileImgSrc);
+      $("#profile-name").html(profileName);
+      $("#reauth-email").html(profileReAuthEmail);
+      $("#inputEmail").hide();
+      $("#remember").hide();
+  });
+}
+
+/**
+* function that checks if the browser supports HTML5
+* local storage
+*
+* @returns {boolean}
+*/
+function supportsHTML5Storage() {
+  try {
+      return 'localStorage' in window && window['localStorage'] !== null;
+  } catch (e) {
+      return false;
+  }
+}
+
+/**
+* Test data. This data will be safe by the web app
+* in the first successful login of a auth user.
+* To Test the scripts, delete the localstorage data
+* and comment this call.
+*
+* @returns {boolean}
+*/
+function testLocalStorageData() {
+  if(!supportsHTML5Storage()) { return false; }
+  localStorage.setItem("PROFILE_IMG_SRC", "//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" );
+  localStorage.setItem("PROFILE_NAME", "César Izquierdo Tello");
+  localStorage.setItem("PROFILE_REAUTH_EMAIL", "oneaccount@gmail.com");
+}
+</script>
+</body>
+
+</html>
