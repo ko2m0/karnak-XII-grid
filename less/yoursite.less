@@ -513,6 +513,9 @@ p {
 .txt-tiny {
     font-size: @font-size-standard - 0.3em;
 }
+.txt-bigger {
+    font-size: @font-size-standard + 0.3em;
+}
 .txt-bolder {
     font-weight: bolder;
 }
@@ -813,7 +816,7 @@ p {
 
 .imma-parallax-cover{
     height: auto;
-    min-height: 400px;
+    min-height: 70vh;
     background-image: url('/media/beach-1701066_1920.jpg');
     background-attachment: fixed;
     background-position: center bottom;
@@ -992,3 +995,17 @@ p {
 align-self: baseline;
     vertical-align: baseline;
 }
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }

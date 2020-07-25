@@ -1,13 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
-
+<html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -31,24 +23,8 @@
     <script src="js/corporate-ol.js"></script>
     <script src="vendor/aos/aos.js"></script>
     <!-- date picker -->
-    <link rel="stylesheet" media="all" href="js/daterange/daterangepicker.css">
+    
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="js/daterange/moment.js"></script>
-    <script src="js/daterange/daterangepicker.js"></script>
-    <!-- media queries -->
-    <!-- iphone 6&7 -->
-    <link rel="stylesheet" media="screen and (min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio:2)" href="/less/mob-mq/iphone6_7.css">
-    <!-- ipad 1,2&mini -->
-    <link rel="stylesheet" media="screen and (min-device-width:768px) and (max-device-width:1024px) and (-webkit-min-device-pixel-ratio:1)" href="/less/mob-mq/ipad2-mini.css">
-
-    <!-- -->
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
   <style>
       
@@ -57,12 +33,12 @@
     </style>
    <body>
        <section class="kg-container">
-           <header class="kg-grid mainHeader unuscolor-d-bg">
+           <header class="kg-grid mainHeader unuscolor-d-bg" id="mainHeader">
            <article class="[ zeb-12  zeb-m-12 ]">
             <div class="[ zeb-4  zeb-m-6 ]">
-                <div class="header--logo k-padding-tiny">
-                    <div class="k-container">
-                        <img src="" alt="a brand logo" class="header--logo__image">
+                <div class="header--logo k-left">
+                    <div class="desktop-top-nav__item">
+                        <a class="albus-txt k-btn txt-bold txt-bigger">Karnak</a>   
                     </div>
                 </div>
             </div>
@@ -71,7 +47,7 @@
                     <div class="desktop-top-nav__list k-bar">
                         <div class="desktop-top-nav__item">                            
                                 <div class="k-dropdown-hover">
-                                    <div class="k-btn unus-d-hover  albus-txt"><i class="fa fa-user"></i><i class="fa fa-chevron-down"></i></div>
+                                    <div class="k-btn unus-d-hover albus-txt align-center flexxer">icon<span class="material-icons">arrow_drop_down</span></div>
                                     <div class="k-dropdown-content duocolor-d-bg">
                                         <a href="" class="desktop-main-nav__sub-menu__item k-block k-padding-tiny duo-d-hover txt-left">
                                         <span class="k-container">link1</span></a>   
@@ -98,560 +74,101 @@
             </div>
             <!-- -->
             <div class="[ zeb-6  zeb-m-6 ] k-hide-large k-hide-medium">
-                <div class="[ zeb-12  zeb-m-12 ]">
-                    <nav data-ui-component="mobileMainNav_btn" class="k-right k-padding-tiny" onclick="k_open()">
-                        <div class="k-container">
-                            <i class="fa fa-male albus-txt"></i>
+                
+                    <nav data-ui-component="mobileMainNav_btn" class="k-right" onclick="k_open()">
+                        <div class=" pointit unus-d-hover k-padding-tiny">
+                           <span class="material-icons md-36">menu</span>
                         </div>
                     </nav>
-                </div>
+                
             </div>            
             <!-- -->
         </article>
-            <div class="[ zeb-12  zeb-m-12 ] clearfix k-hide-small k-hide-medium" style="padding-top: 5vh">
-            <nav class="k-right" data-ui-component="desktopMainMenu">
-                <div class="desktop-main-menu__list k-bar">
-                    <div class="desktop-main-menu__item">                        
-                            <p class="k-btn unus-d-hover ">1</p>                        
-                    </div>
-                    <div class="desktop-main-menu__item">                        
-                            <p class="k-btn unus-d-hover ">2</p>                        
-                    </div>
-                    <div class="desktop-main-menu__item">                        
-                            <p class="k-btn unus-d-hover ">3</p>                        
-                    </div>
-                     <div class="desktop-main-menu__item">
-                     <div class="k-dropdown-hover">                    
-                       <div class="k-btn unus-d-hover "><p>4</p></div>
-                                    <div class="k-dropdown-content duocolor-d-bg">
-                                        <a href="" class="desktop-main-nav__sub-menu__item k-block k-padding-tiny duo-d-hover txt-left">
-                                        <span class="k-container">link1</span></a>   
-                                        <a href="" class="desktop-main-nav__sub-menu__item k-block k-padding-tiny duo-d-hover txt-left">
-                                        <span class="k-container">link2</span></a>   
-                                        <a href="" class="desktop-main-nav__sub-menu__item k-block k-padding-tiny duo-d-hover txt-left">
-                                        <span class="k-container">link3</span></a>   
-                                        <a href="" class="desktop-main-nav__sub-menu__item k-block k-padding-tiny duo-d-hover txt-left">
-                                        <span class="k-container">link4</span></a>   
-                                    </div>                    
-                        </div>
-                    </div>
-                    <div class="desktop-main-menu__item">                        
-                            <p class="k-btn unus-d-hover ">5</p>                        
-                    </div>
-                </div>
-            </nav>
-        </div>
+            
             </header>
+            <!-- HIDDEN MENU que aparece despues de scrollear 100px -->
+    <div data-ui-component="mainHiddenTopMenu" id="mainHiddenMenu" class="[ zeb-12  zeb-m-12 ] unuscolor-d-bg k-hide-small k-hide-medium" hidden>
+           <div class="k-container">
+            <div class="[ zeb-12  zeb-m-12 ] k-padding-tiny">
+                <div class="[ zeb-3 ]">
+                   <div class="k-container">
+                    <img src="" alt="a smaller/alt logo">  
+                   </div>
+                </div>
+                <div class="[ zeb-9 ]">
+                   <div class="k-right">
+                    <p>other content</p>   
+                   </div>   
+                </div>
+            </div>
+           </div>
+    </div>
+    <!-- -->
+            
              <div class="kg-grid mainCover">
-                 <div class="imma-parallax-cover"></div>
+                 <div class="imma-parallax-cover flexxer flexxer-column align-center just-center">
+                    <div class="k-container txt-center"> 
+                     <h1 class="albus-txt">Karnak</h1>
+                     <h3 class="albus-txt">A simple, fast & responsive CSS framework</h3>      
+                    </div>
+                 </div>
              </div>
            <div class="kg-grid mainContent albus-bg">
-           <div class="zeb-12 zeb-m-12 k-padding-tiny">
-              <div class="main-nos">
-                <div class="">
-                   <div class="cards-container">
-                       <div class="card card-3">
-                          <div class="card-title k-padding-tiny">
-                              <h5>I'm a title</h5>
+           <div class="">
+              
+               <div class="k-container border-test">
+                  <div class="k-padding-big">
+                      <div class="zeb-6">
+                         <div class="k-panel">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad illo aut, perferendis modi beatae delectus autem asperiores qui debitis, nulla, voluptatum ipsum numquam obcaecati, repudiandae repellendus? In cum recusandae porro.</p>   
+                         </div>
+                          
+                      </div>
+                      <div class="zeb-6">
+                          <div class="k-panel txt-center">
+                              <img src="" alt="something">
                           </div>
-                          <div class="card-subtitle">
-                              <p>i'm a subtitle</p>
-                          </div>
-                           <div class="card-3-img-container">
-                               <div class="card-img">
-                                   <img src="//www.olinkdevaws.com/media/rateshop/cars/nissan-quest-nd.png" alt="hello">
-                               </div>
-                           </div>
-                           <div class="card-row-container zeb-12 zeb-m-12">
-                               <ul class="li-3">
-                                   <li>
-                                       <table>
-                                           <tr>
-                                               <th>
-                                                   <p>1</p>
-                                               </th>
-                                           </tr>
-                                           <tr>
-                                               <th>
-                                                   <p>2</p>
-                                               </th>
-                                           </tr>
-                                       </table>
-                                   </li>
-                                   <li>
-                                       <table>
-                                           <tr>
-                                               <th>
-                                                   <p>1</p>
-                                               </th>
-                                           </tr>
-                                           <tr>
-                                               <th>
-                                                   <p>2</p>
-                                               </th>
-                                           </tr>
-                                       </table>
-                                   </li>
-                                   <li>
-                                       <table>
-                                           <tr>
-                                               <th>
-                                                   <p>1</p>
-                                               </th>
-                                           </tr>
-                                           <tr>
-                                               <th>
-                                                   <p>2</p>
-                                               </th>
-                                           </tr>
-                                       </table>
-                                   </li>
-                               </ul>
-                           </div>
-                              <div class="card-row-container zeb-12 zeb-m-12">
-                               <ul class="li-2">
-                                   <li>
-                                       <table>
-                                           <tr>
-                                               <th>
-                                                   <p>1</p>
-                                               </th>
-                                           </tr>
-                                           <tr>
-                                               <th>
-                                                   <p>2</p>
-                                               </th>
-                                           </tr>
-                                       </table>
-                                   </li>
-                                   <li>
-                                       <table>
-                                           <tr>
-                                               <th>
-                                                   <p>1</p>
-                                               </th>
-                                           </tr>
-                                           <tr>
-                                               <th>
-                                                   <p>2</p>
-                                               </th>
-                                           </tr>
-                                       </table>
-                                   </li>
-                               </ul>
-                           </div>
-                              <div class="card-row-container zeb-12 zeb-m-12">
-                               <ul class="li-1">
-                                   <li>
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis recusandae a quia, quisquam odit! Nulla quaerat saepe nobis laudantium.</p>
-                                   </li>
-                               </ul>
-                           </div>
-                       </div>
-                       <div class="card card-3">
-                           <div class="card-title k-padding-tiny">
-                              <h5>I'm a title</h5>
-                          </div>
-                          <div class="card-subtitle">
-                              <p>i'm a subtitle</p>
-                          </div>
-                           <div class="card-3-img-container">
-                               <div class="card-img">
-                                   <img src="//www.olinkdevaws.com/media/rateshop/cars/nissan-quest-nd.png" alt="hello">
-                               </div>
-                           </div>
-                           <div class="card-row-container zeb-12 zeb-m-12">
-                               <ul class="li-3">
-                                   <li>
-                                       <table>
-                                           <tr>
-                                               <th>
-                                                   <p>1</p>
-                                               </th>
-                                           </tr>
-                                           <tr>
-                                               <th>
-                                                   <p>2</p>
-                                               </th>
-                                           </tr>
-                                       </table>
-                                   </li>
-                                   <li>
-                                       <table>
-                                           <tr>
-                                               <th>
-                                                   <p>1</p>
-                                               </th>
-                                           </tr>
-                                           <tr>
-                                               <th>
-                                                   <p>2</p>
-                                               </th>
-                                           </tr>
-                                       </table>
-                                   </li>
-                                   <li>
-                                       <table>
-                                           <tr>
-                                               <th>
-                                                   <p>1</p>
-                                               </th>
-                                           </tr>
-                                           <tr>
-                                               <th>
-                                                   <p>2</p>
-                                               </th>
-                                           </tr>
-                                       </table>
-                                   </li>
-                               </ul>
-                           </div>
-                              <div class="card-row-container zeb-12 zeb-m-12">
-                               <ul class="li-2">
-                                   <li>
-                                       <table>
-                                           <tr>
-                                               <th>
-                                                   <p>1</p>
-                                               </th>
-                                           </tr>
-                                           <tr>
-                                               <th>
-                                                   <p>2</p>
-                                               </th>
-                                           </tr>
-                                       </table>
-                                   </li>
-                                   <li>
-                                       <table>
-                                           <tr>
-                                               <th>
-                                                   <p>1</p>
-                                               </th>
-                                           </tr>
-                                           <tr>
-                                               <th>
-                                                   <p>2</p>
-                                               </th>
-                                           </tr>
-                                       </table>
-                                   </li>
-                               </ul>
-                           </div>
-                              <div class="card-row-container zeb-12 zeb-m-12">
-                               <ul class="li-1">
-                                   <li>
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis recusandae a quia, quisquam odit! Nulla quaerat saepe nobis laudantium.</p>
-                                   </li>
-                               </ul>
-                           </div>
-                       </div>
-                       <div class="card card-3">
-                           <div class="card-title k-padding-tiny">
-                              <h5>I'm a title</h5>
-                          </div>
-                          <div class="card-subtitle">
-                              <p>i'm a subtitle</p>
-                          </div>
-                           <div class="card-3-img-container">
-                               <div class="card-img">
-                                   <img src="//www.olinkdevaws.com/media/rateshop/cars/nissan-quest-nd.png" alt="hello">
-                               </div>
-                           </div>
-                           <div class="card-row-container zeb-12 zeb-m-12">
-                               <ul class="li-3">
-                                   <li>
-                                       <table>
-                                           <tr>
-                                               <th>
-                                                   <p>1</p>
-                                               </th>
-                                           </tr>
-                                           <tr>
-                                               <th>
-                                                   <p>2</p>
-                                               </th>
-                                           </tr>
-                                       </table>
-                                   </li>
-                                   <li>
-                                       <table>
-                                           <tr>
-                                               <th>
-                                                   <p>1</p>
-                                               </th>
-                                           </tr>
-                                           <tr>
-                                               <th>
-                                                   <p>2</p>
-                                               </th>
-                                           </tr>
-                                       </table>
-                                   </li>
-                                   <li>
-                                       <table>
-                                           <tr>
-                                               <th>
-                                                   <p>1</p>
-                                               </th>
-                                           </tr>
-                                           <tr>
-                                               <th>
-                                                   <p>2</p>
-                                               </th>
-                                           </tr>
-                                       </table>
-                                   </li>
-                               </ul>
-                           </div>
-                              <div class="card-row-container zeb-12 zeb-m-12">
-                               <ul class="li-2">
-                                   <li>
-                                       <table>
-                                           <tr>
-                                               <th>
-                                                   <p>1</p>
-                                               </th>
-                                           </tr>
-                                           <tr>
-                                               <th>
-                                                   <p>2</p>
-                                               </th>
-                                           </tr>
-                                       </table>
-                                   </li>
-                                   <li>
-                                       <table>
-                                           <tr>
-                                               <th>
-                                                   <p>1</p>
-                                               </th>
-                                           </tr>
-                                           <tr>
-                                               <th>
-                                                   <p>2</p>
-                                               </th>
-                                           </tr>
-                                       </table>
-                                   </li>
-                               </ul>
-                           </div>
-                              <div class="card-row-container zeb-12 zeb-m-12">
-                               <ul class="li-1">
-                                   <li>
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis recusandae a quia, quisquam odit! Nulla quaerat saepe nobis laudantium.</p>
-                                   </li>
-                               </ul>
-                           </div>
-                       </div>
-                          <div class="card card-2">
-                           <div class="card-title k-padding-tiny">
-                              <h5>I'm a title</h5>
-                          </div>
-                          <div class="card-subtitle">
-                              <p>i'm a subtitle</p>
-                          </div>
-                           <div class="card-2-img-container">
-                               <div class="card-img">
-                                   <img src="//www.olinkdevaws.com/media/rateshop/cars/nissan-quest-nd.png" alt="hello">
-                               </div>
-                           </div>
-                           <div class="card-row-container zeb-12 zeb-m-12">
-                               <ul class="li-3">
-                                   <li>
-                                       <table>
-                                           <tr>
-                                               <th>
-                                                   <p>1</p>
-                                               </th>
-                                           </tr>
-                                           <tr>
-                                               <th>
-                                                   <p>2</p>
-                                               </th>
-                                           </tr>
-                                       </table>
-                                   </li>
-                                   <li>
-                                       <table>
-                                           <tr>
-                                               <th>
-                                                   <p>1</p>
-                                               </th>
-                                           </tr>
-                                           <tr>
-                                               <th>
-                                                   <p>2</p>
-                                               </th>
-                                           </tr>
-                                       </table>
-                                   </li>
-                                   <li>
-                                       <table>
-                                           <tr>
-                                               <th>
-                                                   <p>1</p>
-                                               </th>
-                                           </tr>
-                                           <tr>
-                                               <th>
-                                                   <p>2</p>
-                                               </th>
-                                           </tr>
-                                       </table>
-                                   </li>
-                               </ul>
-                           </div>
-                              <div class="card-row-container zeb-12 zeb-m-12">
-                               <ul class="li-2">
-                                   <li>
-                                       <table>
-                                           <tr>
-                                               <th>
-                                                   <p>1</p>
-                                               </th>
-                                           </tr>
-                                           <tr>
-                                               <th>
-                                                   <p>2</p>
-                                               </th>
-                                           </tr>
-                                       </table>
-                                   </li>
-                                   <li>
-                                       <table>
-                                           <tr>
-                                               <th>
-                                                   <p>1</p>
-                                               </th>
-                                           </tr>
-                                           <tr>
-                                               <th>
-                                                   <p>2</p>
-                                               </th>
-                                           </tr>
-                                       </table>
-                                   </li>
-                               </ul>
-                           </div>
-                              <div class="card-row-container zeb-12 zeb-m-12">
-                               <ul class="li-1">
-                                   <li>
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis recusandae a quia, quisquam odit! Nulla quaerat saepe nobis laudantium.</p>
-                                   </li>
-                               </ul>
-                           </div>
-                       </div>
-                       <div class="card card-2">
-                           <div class="card-title k-padding-tiny">
-                              <h5>I'm a title</h5>
-                          </div>
-                          <div class="card-subtitle">
-                              <p>i'm a subtitle</p>
-                          </div>
-                           <div class="card-2-img-container">
-                               <div class="card-img">
-                                   <img src="//www.olinkdevaws.com/media/rateshop/cars/nissan-quest-nd.png" alt="hello">
-                               </div>
-                           </div>
-                           <div class="card-row-container zeb-12 zeb-m-12">
-                               <ul class="li-3">
-                                   <li>
-                                       <table>
-                                           <tr>
-                                               <th>
-                                                   <p>1</p>
-                                               </th>
-                                           </tr>
-                                           <tr>
-                                               <th>
-                                                   <p>2</p>
-                                               </th>
-                                           </tr>
-                                       </table>
-                                   </li>
-                                   <li>
-                                       <table>
-                                           <tr>
-                                               <th>
-                                                   <p>1</p>
-                                               </th>
-                                           </tr>
-                                           <tr>
-                                               <th>
-                                                   <p>2</p>
-                                               </th>
-                                           </tr>
-                                       </table>
-                                   </li>
-                                   <li>
-                                       <table>
-                                           <tr>
-                                               <th>
-                                                   <p>1</p>
-                                               </th>
-                                           </tr>
-                                           <tr>
-                                               <th>
-                                                   <p>2</p>
-                                               </th>
-                                           </tr>
-                                       </table>
-                                   </li>
-                               </ul>
-                           </div>
-                              <div class="card-row-container zeb-12 zeb-m-12">
-                               <ul class="li-2">
-                                   <li>
-                                       <table>
-                                           <tr>
-                                               <th>
-                                                   <p>1</p>
-                                               </th>
-                                           </tr>
-                                           <tr>
-                                               <th>
-                                                   <p>2</p>
-                                               </th>
-                                           </tr>
-                                       </table>
-                                   </li>
-                                   <li>
-                                       <table>
-                                           <tr>
-                                               <th>
-                                                   <p>1</p>
-                                               </th>
-                                           </tr>
-                                           <tr>
-                                               <th>
-                                                   <p>2</p>
-                                               </th>
-                                           </tr>
-                                       </table>
-                                   </li>
-                               </ul>
-                           </div>
-                              <div class="card-row-container zeb-12 zeb-m-12">
-                               <ul class="li-1">
-                                   <li>
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis recusandae a quia, quisquam odit! Nulla quaerat saepe nobis laudantium.</p>
-                                   </li>
-                               </ul>
-                           </div>
-                       </div>
-                   </div>
-               </div>  
+                      </div>
+                  </div>
+                   
+               </div>
+                
+              
+              <div class="k-container k-padding-big duocolor-bg">
+                 <div class="flexxer flexxer-column align-center just-center">
+                     <h5 class="albus-txt">a very decent framework indeed</h5>
+                 </div>
+              </div>
+              <div class="k-container">
+                  <div class="zeb-4 flexxer flexxer-column align-center just-center">
+                     <div class="k-panel">
+                     <h4>title</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quod nemo, sunt amet. Culpa eveniet aperiam quas, ex, dicta ipsum repudiandae temporibus nobis laborum illo libero maiores quam illum doloremque!</p>   
+                     </div>
+                      
+                  </div>
+                  <div class="zeb-4 flexxer flexxer-column align-center just-center">
+                     <div class="k-panel">
+                     <h4>title</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quod nemo, sunt amet. Culpa eveniet aperiam quas, ex, dicta ipsum repudiandae temporibus nobis laborum illo libero maiores quam illum doloremque!</p>   
+                     </div>
+                  </div>
+                  <div class="zeb-4 flexxer flexxer-column align-center just-center">
+                      <div class="k-panel">
+                     <h4>title</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quod nemo, sunt amet. Culpa eveniet aperiam quas, ex, dicta ipsum repudiandae temporibus nobis laborum illo libero maiores quam illum doloremque!</p>   
+                     </div>
+                  </div>
               </div>
                
            </div>
            </div> 
            <footer class="kg-grid mainFooter septemcolor-d-bg clearfix">
            <div class="zeb-12 zeb-m-12 k-padding-small">
-               <div class="zeb-4 zeb-m-4 footerColumns">
+               <div class="zeb-4 zeb-m-12 footerColumns">
                    <p>1</p>
                </div>
-               <div class="zeb-4 zeb-m-4 footerColumns">
+               <div class="zeb-4 zeb-m-12 footerColumns">
                    <ul>
                        <li>
                            <p>1</p>
@@ -661,7 +178,7 @@
                        </li>
                    </ul>
                </div>
-               <div class="zeb-4 zeb-m-4 footerColumns">
+               <div class="zeb-4 zeb-m-12 footerColumns">
                    <ul>
                        <li>
                            <p>1</p>
@@ -680,7 +197,75 @@
            </div>
            </footer>
        </section>
+       <script type="application/javascript">
+       
+           $(document).ready(function() {
+        var headerTop = $('#mainHeader').offset().top;
+        var headerBottom = headerTop + 100; // Sub-menu should appear after this distance from top.
+        $(window).scroll(function () {
+            var scrollTop = $(window).scrollTop(); // Current vertical scroll position from the top
+            if (scrollTop > headerBottom) { // Check to see if we have scrolled more than headerBottom
+                if (($("#mainHiddenMenu").is(":visible") === false)) {
+                    $('#mainHiddenMenu').fadeIn('slow').addClass('mainHiddenMenufadeIn');
+                }
+            } else {
+                if ($("#mainHiddenMenu").is(":visible")) {
+                    $('#mainHiddenMenu').hide();
+                }
+            }
+        });
+    });
+       </script>
    </body>
-   
-   
+   <script>
+    
+function k_open() {
+    document.getElementById("mobileMenu_bar").style.width = "100%";
+}
+function k_close() {
+    document.getElementById("mobileMenu_bar").style.width = "0%";
+}
+
+
+
+
+    /* Open when someone clicks on the span element */
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    /* Close when someone clicks on the "x" symbol inside the overlay */
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+
+
+
+
+    function myFunction(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("k-show") == -1) {
+            x.className += " k-show";
+        } else {
+            x.className = x.className.replace(" k-show", "");
+        }
+    }
+
+    function openCity(evt, cityName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" k-active-tab", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " k-active-tab";
+    }
+
+
+    
+    </script>
     </html>
