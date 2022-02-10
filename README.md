@@ -1,4 +1,4 @@
-# karnak-XII-grid
+# KARNAK ::::: Temple of the Gods
 A decent CSS Framework made with &lt;3 by Ko2m0
 
 
